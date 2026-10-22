@@ -6,12 +6,25 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "data:import": "tsx scripts/import-csv.ts",
+    "data:normalize": "tsx scripts/normalize-data.ts",
+    "sim:ranking": "tsx scripts/simulate-ranking.ts",
+    "report:providers": "tsx scripts/provier-report.ts",
+    "db:sync": "tsx scripts/db-sync.ts",
+    "bandit": "tsx scripts/bandit.ts",
+    "ml:export": "tsx scripts/ml-export.ts",
+    "ml:train": "python scripts/ml/train_ranker.py",
+    "test": "tsx --test \"test/bandit/*.test.ts\" \"test/pipeline/*.test.ts\""
   },
   "dependencies": {
+    "csv-parse": "^7.0.3",
+    "mongodb": "^7.7.0",
     "next": "16.3.6",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "unpdf": "^1.0.6",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -21,6 +34,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

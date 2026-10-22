@@ -1,0 +1,17 @@
+{
+  "importedAt": "2026-09-29T09:07:08.657Z",
+  "feedFailures": [],
+  "rejected": [
+    {
+      "providerId": "providerA",
+      "ref": "row:45",
+      "stage": "profile",
+      "issues": [
+        {
+          "path": "pricing.perMinute",
+          "message": "pricePerMinute must be > 0"
+        }
+      ]
+    }
+  ]
+}

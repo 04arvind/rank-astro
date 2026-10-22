@@ -1,0 +1,5260 @@
+[
+  {
+    "id": "providerA:vijay-sharma",
+    "providerId": "providerA",
+    "sourceId": "vijay-sharma",
+    "name": "Vijay Sharma",
+    "profileUrl": "https://astropatri.com/astrologer/vijay-sharma",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 15,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 500
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:1"
+    }
+  },
+  {
+    "id": "providerA:tanmoy-adhikary",
+    "providerId": "providerA",
+    "sourceId": "tanmoy-adhikary",
+    "name": "Tanmoy Adhikary",
+    "profileUrl": "https://astropatri.com/astrologer/tanmoy-adhikary",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 250,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 1250
+        },
+        {
+          "minutes": 30,
+          "price": 7500
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:2"
+    }
+  },
+  {
+    "id": "providerA:sushil-shastri",
+    "providerId": "providerA",
+    "sourceId": "sushil-shastri",
+    "name": "Sushil Shastri",
+    "profileUrl": "https://astropatri.com/astrologer/sushil-shastri",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 50,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 250
+        },
+        {
+          "minutes": 30,
+          "price": 1500
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:3"
+    }
+  },
+  {
+    "id": "providerA:sunil-kaushik",
+    "providerId": "providerA",
+    "sourceId": "sunil-kaushik",
+    "name": "Sunil Kaushik",
+    "profileUrl": "https://astropatri.com/astrologer/sunil-kaushik",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 250,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 1250
+        },
+        {
+          "minutes": 30,
+          "price": 7500
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:4"
+    }
+  },
+  {
+    "id": "providerA:simmi-dua",
+    "providerId": "providerA",
+    "sourceId": "simmi-dua",
+    "name": "Simmi Dua",
+    "profileUrl": "https://astropatri.com/astrologer/simmi-dua",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 160,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 800
+        },
+        {
+          "minutes": 30,
+          "price": 4800
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:5"
+    }
+  },
+  {
+    "id": "providerA:shakti-luther",
+    "providerId": "providerA",
+    "sourceId": "shakti-luther",
+    "name": "Shakti Luther",
+    "profileUrl": "https://astropatri.com/astrologer/shakti-luther",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 51,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 1000
+        },
+        {
+          "minutes": 30,
+          "price": 1530
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:6"
+    }
+  },
+  {
+    "id": "providerA:priya-aggarwal",
+    "providerId": "providerA",
+    "sourceId": "priya-aggarwal",
+    "name": "Priya Aggarwal",
+    "profileUrl": "https://astropatri.com/astrologer/priya-aggarwal",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 50,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 250
+        },
+        {
+          "minutes": 30,
+          "price": 1500
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:7"
+    }
+  },
+  {
+    "id": "providerA:prateek-goel",
+    "providerId": "providerA",
+    "sourceId": "prateek-goel",
+    "name": "Prateek Goel",
+    "profileUrl": "https://astropatri.com/astrologer/prateek-goel",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 70,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 350
+        },
+        {
+          "minutes": 30,
+          "price": 2100
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": false,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:8"
+    }
+  },
+  {
+    "id": "providerA:pankaj-kumar-sakhuja",
+    "providerId": "providerA",
+    "sourceId": "pankaj-kumar-sakhuja",
+    "name": "Pankaj Kumar Sakhuja",
+    "profileUrl": "https://astropatri.com/astrologer/pankaj-kumar-sakhuja",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 70,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 350
+        },
+        {
+          "minutes": 30,
+          "price": 2100
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:9"
+    }
+  },
+  {
+    "id": "providerA:pankaj-gohri",
+    "providerId": "providerA",
+    "sourceId": "pankaj-gohri",
+    "name": "Pankaj Gohri",
+    "profileUrl": "https://astropatri.com/astrologer/pankaj-gohri",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 300,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 1500
+        },
+        {
+          "minutes": 30,
+          "price": 9000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:10"
+    }
+  },
+  {
+    "id": "providerA:deepika-vashisht",
+    "providerId": "providerA",
+    "sourceId": "deepika-vashisht",
+    "name": "Deepika Vashisht Tarot",
+    "profileUrl": "https://astropatri.com/astrologer/deepika-vashisht",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 40,
+      "minCallMinutes": 4,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 200
+        },
+        {
+          "minutes": 30,
+          "price": 1200
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:11"
+    }
+  },
+  {
+    "id": "providerA:shri-chandresh-sharma",
+    "providerId": "providerA",
+    "sourceId": "shri-chandresh-sharma",
+    "name": "Shri Chandresh Sharma",
+    "profileUrl": "https://astropatri.com/astrologer/shri-chandresh-sharma",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 85,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 425
+        },
+        {
+          "minutes": 30,
+          "price": 2550
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:12"
+    }
+  },
+  {
+    "id": "providerA:pandit-alok-bajpai",
+    "providerId": "providerA",
+    "sourceId": "pandit-alok-bajpai",
+    "name": "Pandit Alok Bajpai",
+    "profileUrl": "https://astropatri.com/astrologer/pandit-alok-bajpai",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 500
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:13"
+    }
+  },
+  {
+    "id": "providerA:suresh-kumar",
+    "providerId": "providerA",
+    "sourceId": "suresh-kumar",
+    "name": "Suresh Kumar",
+    "profileUrl": "https://astropatri.com/astrologer/suresh-kumar",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 4,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 480
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:14"
+    }
+  },
+  {
+    "id": "providerA:vikram-tiwari",
+    "providerId": "providerA",
+    "sourceId": "vikram-tiwari",
+    "name": "Vikram Tiwari",
+    "profileUrl": "https://astropatri.com/astrologer/vikram-tiwari",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 200,
+      "minCallMinutes": 4,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 1000
+        },
+        {
+          "minutes": 30,
+          "price": 6000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": false,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:15"
+    }
+  },
+  {
+    "id": "providerA:vijay-kumar",
+    "providerId": "providerA",
+    "sourceId": "vijay-kumar",
+    "name": "Vijay Kumar",
+    "profileUrl": "https://astropatri.com/astrologer/vijay-kumar",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 3,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 450
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:16"
+    }
+  },
+  {
+    "id": "providerA:rajiv-sethi",
+    "providerId": "providerA",
+    "sourceId": "rajiv-sethi",
+    "name": "Rajiv Sethi",
+    "profileUrl": "https://astropatri.com/astrologer/rajiv-sethi",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 500,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 2500
+        },
+        {
+          "minutes": 30,
+          "price": 15000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:17"
+    }
+  },
+  {
+    "id": "providerA:anand-sagar-pathak",
+    "providerId": "providerA",
+    "sourceId": "anand-sagar-pathak",
+    "name": "Anand Sagar Pathak",
+    "profileUrl": "https://astropatri.com/astrologer/anand-sagar-pathak",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 70,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 350
+        },
+        {
+          "minutes": 30,
+          "price": 2100
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:18"
+    }
+  },
+  {
+    "id": "providerA:moksha-arya",
+    "providerId": "providerA",
+    "sourceId": "moksha-arya",
+    "name": "Moksha Arya",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/moksha-arya",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 160,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 800
+        },
+        {
+          "minutes": 30,
+          "price": 4800
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:19"
+    }
+  },
+  {
+    "id": "providerA:rajni-gupta",
+    "providerId": "providerA",
+    "sourceId": "rajni-gupta",
+    "name": "Rajni Gupta",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/rajni-gupta",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 40,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 200
+        },
+        {
+          "minutes": 30,
+          "price": 1200
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:20"
+    }
+  },
+  {
+    "id": "providerA:abeer-ray",
+    "providerId": "providerA",
+    "sourceId": "abeer-ray",
+    "name": "Abeer Ray",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/abeer-ray",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 40,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 200
+        },
+        {
+          "minutes": 30,
+          "price": 1200
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:21"
+    }
+  },
+  {
+    "id": "providerA:shashank-shekhar-bajpai",
+    "providerId": "providerA",
+    "sourceId": "shashank-shekhar-bajpai",
+    "name": "Shashank Shekhar Vajpayee",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/shashank-shekhar-bajpai",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 40,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 200
+        },
+        {
+          "minutes": 30,
+          "price": 1200
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:22"
+    }
+  },
+  {
+    "id": "providerA:siva-prasad-tata",
+    "providerId": "providerA",
+    "sourceId": "siva-prasad-tata",
+    "name": "Shiv Prasad Tata",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/siva-prasad-tata",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 500
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:23"
+    }
+  },
+  {
+    "id": "providerA:anil-kumar-jain",
+    "providerId": "providerA",
+    "sourceId": "anil-kumar-jain",
+    "name": "Anil Jain",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/anil-kumar-jain",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 250,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 1250
+        },
+        {
+          "minutes": 30,
+          "price": 7500
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:24"
+    }
+  },
+  {
+    "id": "providerA:poonam-malik",
+    "providerId": "providerA",
+    "sourceId": "poonam-malik",
+    "name": "Poonam Malik",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/poonam-malik",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 50,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 250
+        },
+        {
+          "minutes": 30,
+          "price": 1500
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:25"
+    }
+  },
+  {
+    "id": "providerA:meenu-kumari",
+    "providerId": "providerA",
+    "sourceId": "meenu-kumari",
+    "name": "Meenu Kumari",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/meenu-kumari",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 35,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 175
+        },
+        {
+          "minutes": 30,
+          "price": 1050
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:26"
+    }
+  },
+  {
+    "id": "providerA:vandana-rohtagi",
+    "providerId": "providerA",
+    "sourceId": "vandana-rohtagi",
+    "name": "Vandana Rohtagi",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/vandana-rohtagi",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 500
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:27"
+    }
+  },
+  {
+    "id": "providerA:ajay-k-verma",
+    "providerId": "providerA",
+    "sourceId": "ajay-k-verma",
+    "name": "Ajay Kumar Verma",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/ajay-k-verma",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 40,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 200
+        },
+        {
+          "minutes": 30,
+          "price": 1200
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:28"
+    }
+  },
+  {
+    "id": "providerA:supriya",
+    "providerId": "providerA",
+    "sourceId": "supriya",
+    "name": "Supriya Kandwal",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/supriya",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 30,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 250
+        },
+        {
+          "minutes": 30,
+          "price": 1200
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:29"
+    }
+  },
+  {
+    "id": "providerA:gautam-rampal",
+    "providerId": "providerA",
+    "sourceId": "gautam-rampal",
+    "name": "Gautam Rampal",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/gautam-rampal",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 60,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 300
+        },
+        {
+          "minutes": 30,
+          "price": 1800
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": false,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:30"
+    }
+  },
+  {
+    "id": "providerA:bhanupriya-mishra",
+    "providerId": "providerA",
+    "sourceId": "bhanupriya-mishra",
+    "name": "Bhanupriya Mishra",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/bhanupriya-mishra",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 48,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 240
+        },
+        {
+          "minutes": 30,
+          "price": 1440
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:31"
+    }
+  },
+  {
+    "id": "providerA:divisha-jain",
+    "providerId": "providerA",
+    "sourceId": "divisha-jain",
+    "name": "Divisha Jain",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/divisha-jain",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 200,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 1000
+        },
+        {
+          "minutes": 30,
+          "price": 6000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": false,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:32"
+    }
+  },
+  {
+    "id": "providerA:dev",
+    "providerId": "providerA",
+    "sourceId": "dev",
+    "name": "Dev Ji",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/dev",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 50,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 250
+        },
+        {
+          "minutes": 30,
+          "price": 1500
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:33"
+    }
+  },
+  {
+    "id": "providerA:rani",
+    "providerId": "providerA",
+    "sourceId": "rani",
+    "name": "Rajrani Manocha",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/rani",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 500,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 2500
+        },
+        {
+          "minutes": 30,
+          "price": 15000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:34"
+    }
+  },
+  {
+    "id": "providerA:basab-bijay-sarkar",
+    "providerId": "providerA",
+    "sourceId": "basab-bijay-sarkar",
+    "name": "Basab Bijay Sarkar",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/basab-bijay-sarkar",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 200,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 1000
+        },
+        {
+          "minutes": 30,
+          "price": 4500
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:35"
+    }
+  },
+  {
+    "id": "providerA:brij-kishore-chauhan",
+    "providerId": "providerA",
+    "sourceId": "brij-kishore-chauhan",
+    "name": "Brij Kishor Chauhan",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/brij-kishore-chauhan",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 60,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 300
+        },
+        {
+          "minutes": 30,
+          "price": 1800
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:36"
+    }
+  },
+  {
+    "id": "providerA:pooja-ahuja",
+    "providerId": "providerA",
+    "sourceId": "pooja-ahuja",
+    "name": "Pooja Ahuja",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/pooja-ahuja",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 75,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 375
+        },
+        {
+          "minutes": 30,
+          "price": 2250
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:37"
+    }
+  },
+  {
+    "id": "providerA:praavin-surie",
+    "providerId": "providerA",
+    "sourceId": "praavin-surie",
+    "name": "Praavin Surie",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/praavin-surie",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 160,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 800
+        },
+        {
+          "minutes": 30,
+          "price": 4800
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:38"
+    }
+  },
+  {
+    "id": "providerA:brij-raj-gautam",
+    "providerId": "providerA",
+    "sourceId": "brij-raj-gautam",
+    "name": "Brijraj Gautam",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/brij-raj-gautam",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 45,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 225
+        },
+        {
+          "minutes": 30,
+          "price": 1350
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:39"
+    }
+  },
+  {
+    "id": "providerA:acharya-s-ganesh",
+    "providerId": "providerA",
+    "sourceId": "acharya-s-ganesh",
+    "name": "Acharya S Ganesh",
+    "profileUrl": "https://astropatri.com/astrologer/acharya-s-ganesh",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 700,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 3500
+        },
+        {
+          "minutes": 30,
+          "price": 21000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": false,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:40"
+    }
+  },
+  {
+    "id": "providerA:parveen-kumar-sharma",
+    "providerId": "providerA",
+    "sourceId": "parveen-kumar-sharma",
+    "name": "Praveen Sharma",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/parveen-kumar-sharma",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 60,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 300
+        },
+        {
+          "minutes": 30,
+          "price": 1800
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": false,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:41"
+    }
+  },
+  {
+    "id": "providerA:vikas-jain",
+    "providerId": "providerA",
+    "sourceId": "vikas-jain",
+    "name": "Vikas Jain",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 250,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 1250
+        },
+        {
+          "minutes": 30,
+          "price": 7500
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": false,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:42"
+    }
+  },
+  {
+    "id": "providerA:meetu-lal",
+    "providerId": "providerA",
+    "sourceId": "meetu-lal",
+    "name": "Meetu Lal",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/meetu-lal",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 500
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": false,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:43"
+    }
+  },
+  {
+    "id": "providerA:arvind-pandeya",
+    "providerId": "providerA",
+    "sourceId": "arvind-pandeya",
+    "name": "Arvind Pandeya",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/arvind-pandeya",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 130,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 650
+        },
+        {
+          "minutes": 30,
+          "price": 3900
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": false,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:44"
+    }
+  },
+  {
+    "id": "providerA:anand-rai",
+    "providerId": "providerA",
+    "sourceId": "anand-rai",
+    "name": "Anand Rai",
+    "profileUrl": "https://astropatri.com/consult/talk-to-astrologer/anand-rai",
+    "languages": [],
+    "categories": [],
+    "specializations": [],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": null,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 5,
+      "packages": [
+        {
+          "minutes": 5,
+          "price": 400
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "verified": false,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "languages",
+        "categories",
+        "specializations",
+        "experienceYears",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:46"
+    }
+  },
+  {
+    "id": "providerB:acharya-anil-joshi",
+    "providerId": "providerB",
+    "sourceId": "acharya-anil-joshi",
+    "name": "Acharya Anil Joshi",
+    "tagline": "Over a decade of experience. Vedic Astrology & Numerology | दस वर्ष से अधिक का अनुभव. वैदिक ज्योतिष और अंक ज्योतिष",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "numerology"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 10,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 1500
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": 50
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T4",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:1"
+    }
+  },
+  {
+    "id": "providerB:astro-yogesh-darira",
+    "providerId": "providerB",
+    "sourceId": "astro-yogesh-darira",
+    "name": "Astro Yogesh Darira",
+    "tagline": "15+ years of experience. Consultation in Hindi & English | पंद्रह वर्ष से अधिक का अनुभव. हिंदी और अंग्रेज़ी में परामर्श",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 15,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 50,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 750
+        },
+        {
+          "minutes": 30,
+          "price": 1500
+        }
+      ],
+      "payoutPerMinute": 25
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T2",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:2"
+    }
+  },
+  {
+    "id": "providerB:astro-tarun-sharda",
+    "providerId": "providerB",
+    "sourceId": "astro-tarun-sharda",
+    "name": "Astro Tarun Sharda",
+    "tagline": "8+ years of experience. Vedic Astrology & Numerology | आठ वर्ष से अधिक का अनुभव. वैदिक ज्योतिष और अंक ज्योतिष",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "numerology"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 8,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 67,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 1000
+        },
+        {
+          "minutes": 30,
+          "price": 2000
+        }
+      ],
+      "payoutPerMinute": 33.333333333333336
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T3",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:3"
+    }
+  },
+  {
+    "id": "providerB:acharya-raghvendra",
+    "providerId": "providerB",
+    "sourceId": "acharya-raghvendra",
+    "name": "Acharya Raghvendra",
+    "tagline": "18 years of experience. Vedic Astrology & Numerology | अठारह वर्षों का अनुभव. वैदिक ज्योतिष और अंक ज्योतिष",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "numerology"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 18,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 1500
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": 50
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T4",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:4"
+    }
+  },
+  {
+    "id": "providerB:acharya-manisha",
+    "providerId": "providerB",
+    "sourceId": "acharya-manisha",
+    "name": "Acharya Manisha",
+    "tagline": "Consultation in Vedic Astrology | वैदिक ज्योतिष में परामर्श",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 3,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 33,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 500
+        },
+        {
+          "minutes": 30,
+          "price": 1000
+        }
+      ],
+      "payoutPerMinute": 16.666666666666668
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T1",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:5"
+    }
+  },
+  {
+    "id": "providerB:acharya-rajendra-kumar",
+    "providerId": "providerB",
+    "sourceId": "acharya-rajendra-kumar",
+    "name": "Acharya Rajendra Kumar",
+    "tagline": "Over two decades of experience. Vedic Astrology, Numerology & Vastu | बीस वर्ष से अधिक का अनुभव. वैदिक ज्योतिष, अंक ज्योतिष और वास्तु",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "numerology",
+      "vastu",
+      "palmistry"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 20,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 167,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 2500
+        },
+        {
+          "minutes": 30,
+          "price": 5000
+        }
+      ],
+      "payoutPerMinute": 83.33333333333333
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T5",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:6"
+    }
+  },
+  {
+    "id": "providerB:chandan-prasad",
+    "providerId": "providerB",
+    "sourceId": "chandan-prasad",
+    "name": "Chandan Prasad",
+    "tagline": "15+ years of experience. Kundli, Numerology & Vastu | पंद्रह वर्ष से अधिक का अनुभव. कुंडली, अंक ज्योतिष और वास्तु",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "numerology",
+      "vastu"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 15,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 1500
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": 50
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T4",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:7"
+    }
+  },
+  {
+    "id": "providerB:nilesh-agrawal",
+    "providerId": "providerB",
+    "sourceId": "nilesh-agrawal",
+    "name": "Nilesh Agrawal",
+    "tagline": "Over two decades of experience. Numerology & Palmistry | बीस वर्ष से अधिक का अनुभव. अंक ज्योतिष और हस्तरेखा",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [],
+    "specializations": [
+      "numerology",
+      "palmistry"
+    ],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 20,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 67,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 1000
+        },
+        {
+          "minutes": 30,
+          "price": 2000
+        }
+      ],
+      "payoutPerMinute": 33.333333333333336
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T3",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:8"
+    }
+  },
+  {
+    "id": "providerB:meenakshi-soni",
+    "providerId": "providerB",
+    "sourceId": "meenakshi-soni",
+    "name": "Meenakshi Soni",
+    "tagline": "15+ years of experience. Kundli analysis & Palmistry | पंद्रह वर्ष से अधिक का अनुभव. कुंडली विश्लेषण और हस्तरेखा",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "palmistry"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 15,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 67,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 1000
+        },
+        {
+          "minutes": 30,
+          "price": 2000
+        }
+      ],
+      "payoutPerMinute": 33.333333333333336
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T3",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:9"
+    }
+  },
+  {
+    "id": "providerB:dr-om-prakash-sharma",
+    "providerId": "providerB",
+    "sourceId": "dr-om-prakash-sharma",
+    "name": "Dr. Om Prakash Sharma",
+    "tagline": "Over two decades of experience. Vedic Astrology & Palmistry | बीस वर्ष से अधिक का अनुभव. वैदिक ज्योतिष और हस्तरेखा",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "palmistry"
+    ],
+    "consultationModes": [
+      "audio",
+      "video"
+    ],
+    "experienceYears": 20,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 50,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 750
+        },
+        {
+          "minutes": 30,
+          "price": 1500
+        }
+      ],
+      "payoutPerMinute": 25
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T2",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:10"
+    }
+  },
+  {
+    "id": "providerB:acharya-chhavi-bindra",
+    "providerId": "providerB",
+    "sourceId": "acharya-chhavi-bindra",
+    "name": "Acharya Chhavi Bindra",
+    "tagline": "8+ years of experience. Consultation in Hindi, English & Punjabi | आठ वर्ष से अधिक का अनुभव. हिंदी, अंग्रेज़ी और पंजाबी में परामर्श",
+    "languages": [
+      "hindi",
+      "english",
+      "punjabi"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "numerology"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 8,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 50,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 750
+        },
+        {
+          "minutes": 30,
+          "price": 1500
+        }
+      ],
+      "payoutPerMinute": 25
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T2",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:11"
+    }
+  },
+  {
+    "id": "providerB:vishnu-kant-sharma",
+    "providerId": "providerB",
+    "sourceId": "vishnu-kant-sharma",
+    "name": "Vishnu Kant Sharma",
+    "tagline": "16+ years of experience. Kundli & Palmistry analysis | सोलह वर्ष से अधिक का अनुभव. कुंडली और हस्तरेखा विश्लेषण",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "palmistry"
+    ],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 16,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 50,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 750
+        },
+        {
+          "minutes": 30,
+          "price": 1500
+        }
+      ],
+      "payoutPerMinute": 25
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T2",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:12"
+    }
+  },
+  {
+    "id": "providerB:ramesh-guru-mastan",
+    "providerId": "providerB",
+    "sourceId": "ramesh-guru-mastan",
+    "name": "Ramesh Guru Mastan",
+    "tagline": "Over two decades of experience. Palmistry & Reiki Healing | बीस वर्ष से अधिक का अनुभव. हस्तरेखा और रेकी हीलिंग",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [],
+    "specializations": [
+      "palmistry",
+      "reiki"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 20,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 50,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 750
+        },
+        {
+          "minutes": 30,
+          "price": 1500
+        }
+      ],
+      "payoutPerMinute": 25
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T2",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:13"
+    }
+  },
+  {
+    "id": "providerB:dr-rajesh-sharma",
+    "providerId": "providerB",
+    "sourceId": "dr-rajesh-sharma",
+    "name": "Dr Rajesh Sharma",
+    "tagline": "Over two decades of experience. Vedic Astrology & Lal Kitab | बीस वर्ष से अधिक का अनुभव. वैदिक ज्योतिष और लाल किताब",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "lal-kitab"
+    ],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 20,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 50,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 750
+        },
+        {
+          "minutes": 30,
+          "price": 1500
+        }
+      ],
+      "payoutPerMinute": 25
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T2",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:14"
+    }
+  },
+  {
+    "id": "providerB:preeti-gupta",
+    "providerId": "providerB",
+    "sourceId": "preeti-gupta",
+    "name": "Preeti Gupta",
+    "tagline": "Consultation in Vedic Astrology & Reiki Healing | वैदिक ज्योतिष और रेकी हीलिंग में परामर्श",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "reiki"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 3,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 33,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 500
+        },
+        {
+          "minutes": 30,
+          "price": 1000
+        }
+      ],
+      "payoutPerMinute": 16.666666666666668
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T1",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:15"
+    }
+  },
+  {
+    "id": "providerB:astro-ashish-kumar",
+    "providerId": "providerB",
+    "sourceId": "astro-ashish-kumar",
+    "name": "Astro Ashish Kumar",
+    "tagline": "Consultation in Vedic Astrology & Palmistry, in Hindi & English | वैदिक ज्योतिष और हस्तरेखा में परामर्श, हिंदी और अंग्रेज़ी में",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "palmistry"
+    ],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": 3,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 33,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 500
+        },
+        {
+          "minutes": 30,
+          "price": 1000
+        }
+      ],
+      "payoutPerMinute": 16.666666666666668
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T1",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:16"
+    }
+  },
+  {
+    "id": "providerB:er-kuldeep-sharma",
+    "providerId": "providerB",
+    "sourceId": "er-kuldeep-sharma",
+    "name": "Er. Kuldeep Sharma",
+    "tagline": "Specialist in Vedic Astrology & KP System | वैदिक ज्योतिष और KP सिस्टम के विशेषज्ञ",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "kp"
+    ],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 6,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 67,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 1000
+        },
+        {
+          "minutes": 30,
+          "price": 2000
+        }
+      ],
+      "payoutPerMinute": 33.333333333333336
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T3",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:17"
+    }
+  },
+  {
+    "id": "providerB:minaxi-inder-rathore",
+    "providerId": "providerB",
+    "sourceId": "minaxi-inder-rathore",
+    "name": "Minaxi Inder Rathore",
+    "tagline": "Over a decade of experience. Numerology & Tarot in Hindi, English & Punjabi | एक दशक से अधिक का अनुभव. अंक ज्योतिष और टैरो. हिंदी, अंग्रेज़ी, पंजाबी",
+    "languages": [
+      "hindi",
+      "english",
+      "punjabi"
+    ],
+    "categories": [],
+    "specializations": [
+      "numerology",
+      "tarot"
+    ],
+    "consultationModes": [
+      "audio",
+      "chat"
+    ],
+    "experienceYears": 11,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 100,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 1500
+        },
+        {
+          "minutes": 30,
+          "price": 3000
+        }
+      ],
+      "payoutPerMinute": 50
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T4",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:18"
+    }
+  },
+  {
+    "id": "providerB:manish-vyas",
+    "providerId": "providerB",
+    "sourceId": "manish-vyas",
+    "name": "Manish Vyas",
+    "tagline": "Over a decade of experience. Vedic Astrology, Vastu & Palmistry | एक दशक से अधिक का अनुभव. वैदिक ज्योतिष, वास्तु और हस्तरेखा",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "vastu",
+      "palmistry"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 11,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 67,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 1000
+        },
+        {
+          "minutes": 30,
+          "price": 2000
+        }
+      ],
+      "payoutPerMinute": 33.333333333333336
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T3",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:19"
+    }
+  },
+  {
+    "id": "providerB:dr-nikita-agarwal",
+    "providerId": "providerB",
+    "sourceId": "dr-nikita-agarwal",
+    "name": "Dr Nikita Agarwal",
+    "tagline": "Consultation in Vedic Astrology & KP System, in Hindi & English | वैदिक ज्योतिष और KP सिस्टम में परामर्श, हिंदी और अंग्रेज़ी में",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "kp"
+    ],
+    "consultationModes": [
+      "audio",
+      "video",
+      "chat"
+    ],
+    "experienceYears": 3,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 33,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 500
+        },
+        {
+          "minutes": 30,
+          "price": 1000
+        }
+      ],
+      "payoutPerMinute": 16.666666666666668
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T1",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:20"
+    }
+  },
+  {
+    "id": "providerB:raksha-yadav",
+    "providerId": "providerB",
+    "sourceId": "raksha-yadav",
+    "name": "Raksha Yadav",
+    "tagline": "Consultation in Vedic Astrology, Numerology, Tarot & KP System | वैदिक ज्योतिष, अंक ज्योतिष, टैरो और KP सिस्टम में परामर्श",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [],
+    "specializations": [
+      "vedic",
+      "numerology",
+      "tarot",
+      "kp"
+    ],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 3,
+    "rating": null,
+    "reviewCount": 0,
+    "pricing": {
+      "perMinute": 67,
+      "minCallMinutes": 30,
+      "packages": [
+        {
+          "minutes": 15,
+          "price": 1000
+        },
+        {
+          "minutes": 30,
+          "price": 2000
+        }
+      ],
+      "payoutPerMinute": 33.333333333333336
+    },
+    "availability": {
+      "status": "unknown",
+      "lastActiveAt": null
+    },
+    "tier": "T3",
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "categories",
+        "rating",
+        "avatarUrl",
+        "about",
+        "availability",
+        "onboardedAt"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:21"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-001",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-001",
+    "externalId": "PC_AST_001",
+    "name": "Aarav Sharma",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "love",
+      "marriage"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 3,
+    "rating": 3.8,
+    "reviewCount": 45,
+    "pricing": {
+      "perMinute": 10,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:1"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-002",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-002",
+    "externalId": "PC_AST_002",
+    "name": "Ananya Verma",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "career",
+      "finance"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 5,
+    "rating": 4.5,
+    "reviewCount": 182,
+    "pricing": {
+      "perMinute": 15,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:2"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-003",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-003",
+    "externalId": "PC_AST_003",
+    "name": "Rohit Joshi",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [
+      "love",
+      "marriage"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 7,
+    "rating": 4,
+    "reviewCount": 319,
+    "pricing": {
+      "perMinute": 20,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "busy",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:3"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-004",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-004",
+    "externalId": "PC_AST_004",
+    "name": "Priya Kapoor",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "career",
+      "education"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 9,
+    "rating": 4.7,
+    "reviewCount": 456,
+    "pricing": {
+      "perMinute": 25,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:4"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-005",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-005",
+    "externalId": "PC_AST_005",
+    "name": "Vikram Mehta",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "finance",
+      "career"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 11,
+    "rating": 4.2,
+    "reviewCount": 593,
+    "pricing": {
+      "perMinute": 30,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "offline",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:5"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-006",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-006",
+    "externalId": "PC_AST_006",
+    "name": "Neha Singh",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "health"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 13,
+    "rating": 4.9,
+    "reviewCount": 730,
+    "pricing": {
+      "perMinute": 35,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:6"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-007",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-007",
+    "externalId": "PC_AST_007",
+    "name": "Aditya Rao",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [
+      "love",
+      "marriage"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 15,
+    "rating": 4.4,
+    "reviewCount": 867,
+    "pricing": {
+      "perMinute": 40,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:7"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-008",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-008",
+    "externalId": "PC_AST_008",
+    "name": "Sneha Gupta",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "career",
+      "finance"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 17,
+    "rating": 3.9,
+    "reviewCount": 1004,
+    "pricing": {
+      "perMinute": 10,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "busy",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:8"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-009",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-009",
+    "externalId": "PC_AST_009",
+    "name": "Karan Malhotra",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "marriage",
+      "love"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 19,
+    "rating": 4.6,
+    "reviewCount": 1141,
+    "pricing": {
+      "perMinute": 15,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:9"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-010",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-010",
+    "externalId": "PC_AST_010",
+    "name": "Pooja Iyer",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [
+      "finance",
+      "career"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 3,
+    "rating": 4.1,
+    "reviewCount": 1278,
+    "pricing": {
+      "perMinute": 20,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "offline",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:10"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-011",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-011",
+    "externalId": "PC_AST_011",
+    "name": "Rahul Saxena",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "career",
+      "education"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 5,
+    "rating": 4.8,
+    "reviewCount": 1415,
+    "pricing": {
+      "perMinute": 25,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:11"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-012",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-012",
+    "externalId": "PC_AST_012",
+    "name": "Meera Nair",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "love",
+      "marriage"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 7,
+    "rating": 4.3,
+    "reviewCount": 102,
+    "pricing": {
+      "perMinute": 30,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:12"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-013",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-013",
+    "externalId": "PC_AST_013",
+    "name": "Arjun Bhatia",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [
+      "finance",
+      "career"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 9,
+    "rating": 3.8,
+    "reviewCount": 239,
+    "pricing": {
+      "perMinute": 35,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "busy",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:13"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-014",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-014",
+    "externalId": "PC_AST_014",
+    "name": "Kavya Menon",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "marriage",
+      "love"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 11,
+    "rating": 4.5,
+    "reviewCount": 376,
+    "pricing": {
+      "perMinute": 40,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:14"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-015",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-015",
+    "externalId": "PC_AST_015",
+    "name": "Nitin Chawla",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "career",
+      "finance"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 13,
+    "rating": 4,
+    "reviewCount": 513,
+    "pricing": {
+      "perMinute": 10,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "offline",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:15"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-016",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-016",
+    "externalId": "PC_AST_016",
+    "name": "Riya Khanna",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [
+      "love"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 15,
+    "rating": 4.7,
+    "reviewCount": 650,
+    "pricing": {
+      "perMinute": 15,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:16"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-017",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-017",
+    "externalId": "PC_AST_017",
+    "name": "Siddharth Jain",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "career",
+      "finance"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 17,
+    "rating": 4.2,
+    "reviewCount": 787,
+    "pricing": {
+      "perMinute": 20,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:17"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-018",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-018",
+    "externalId": "PC_AST_018",
+    "name": "Ishita Roy",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "marriage",
+      "love"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 19,
+    "rating": 4.9,
+    "reviewCount": 924,
+    "pricing": {
+      "perMinute": 25,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "busy",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:18"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-019",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-019",
+    "externalId": "PC_AST_019",
+    "name": "Manish Arora",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [
+      "finance",
+      "career"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 3,
+    "rating": 4.4,
+    "reviewCount": 1061,
+    "pricing": {
+      "perMinute": 30,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:19"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-020",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-020",
+    "externalId": "PC_AST_020",
+    "name": "Tanya Sethi",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "love",
+      "marriage"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 5,
+    "rating": 3.9,
+    "reviewCount": 1198,
+    "pricing": {
+      "perMinute": 35,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "offline",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:20"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-021",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-021",
+    "externalId": "PC_AST_021",
+    "name": "Deepak Mishra",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [
+      "career",
+      "finance"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 7,
+    "rating": 4.6,
+    "reviewCount": 1335,
+    "pricing": {
+      "perMinute": 40,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:21"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-022",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-022",
+    "externalId": "PC_AST_022",
+    "name": "Simran Kaur",
+    "languages": [
+      "hindi",
+      "english",
+      "punjabi"
+    ],
+    "categories": [
+      "marriage"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 9,
+    "rating": 4.1,
+    "reviewCount": 1472,
+    "pricing": {
+      "perMinute": 10,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": [
+        "categories:Family"
+      ]
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:22"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-023",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-023",
+    "externalId": "PC_AST_023",
+    "name": "Varun Agarwal",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "finance",
+      "career"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 11,
+    "rating": 4.8,
+    "reviewCount": 159,
+    "pricing": {
+      "perMinute": 15,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "busy",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:23"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-024",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-024",
+    "externalId": "PC_AST_024",
+    "name": "Shreya Das",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [
+      "love",
+      "marriage"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 13,
+    "rating": 4.3,
+    "reviewCount": 296,
+    "pricing": {
+      "perMinute": 20,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:24"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-025",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-025",
+    "externalId": "PC_AST_025",
+    "name": "Amit Tiwari",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "career",
+      "education"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 15,
+    "rating": 3.8,
+    "reviewCount": 433,
+    "pricing": {
+      "perMinute": 25,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "offline",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:25"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-026",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-026",
+    "externalId": "PC_AST_026",
+    "name": "Nisha Yadav",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "health"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 17,
+    "rating": 4.5,
+    "reviewCount": 570,
+    "pricing": {
+      "perMinute": 30,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:26"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-027",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-027",
+    "externalId": "PC_AST_027",
+    "name": "Harsh Vyas",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [
+      "love",
+      "career"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 19,
+    "rating": 4,
+    "reviewCount": 707,
+    "pricing": {
+      "perMinute": 35,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:27"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-028",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-028",
+    "externalId": "PC_AST_028",
+    "name": "Divya Reddy",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "marriage",
+      "love"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 3,
+    "rating": 4.7,
+    "reviewCount": 844,
+    "pricing": {
+      "perMinute": 40,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "busy",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:28"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-029",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-029",
+    "externalId": "PC_AST_029",
+    "name": "Mohit Kapoor",
+    "languages": [
+      "hindi"
+    ],
+    "categories": [
+      "finance",
+      "career"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 5,
+    "rating": 4.2,
+    "reviewCount": 981,
+    "pricing": {
+      "perMinute": 10,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "online",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:29"
+    }
+  },
+  {
+    "id": "providerC:pc-ast-030",
+    "providerId": "providerC",
+    "sourceId": "pc-ast-030",
+    "externalId": "PC_AST_030",
+    "name": "Aditi Kulkarni",
+    "languages": [
+      "hindi",
+      "english"
+    ],
+    "categories": [
+      "career",
+      "marriage"
+    ],
+    "specializations": [],
+    "consultationModes": [
+      "audio"
+    ],
+    "experienceYears": 7,
+    "rating": 4.9,
+    "reviewCount": 1118,
+    "pricing": {
+      "perMinute": 15,
+      "minCallMinutes": null,
+      "packages": [],
+      "payoutPerMinute": null
+    },
+    "availability": {
+      "status": "offline",
+      "lastActiveAt": null
+    },
+    "verified": true,
+    "onboardedAt": null,
+    "dataQuality": {
+      "missing": [
+        "specializations",
+        "avatarUrl",
+        "about",
+        "onboardedAt",
+        "payout"
+      ],
+      "unmapped": []
+    },
+    "source": {
+      "importedAt": 1790672828657,
+      "ref": "row:30"
+    }
+  }
+]

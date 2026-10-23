@@ -5,13 +5,12 @@ import BanditPanel from "@/components/admin/BanditPanel";
 import ProviderStats from "@/components/admin/ProviderStats";
 import RankingPipeline, { type PipelineCandidate, type PipelineProvider } from "@/components/admin/RankingPipeline";
 import ScoreBreakdownTable from "@/components/admin/ScoreBreakdownTable";
+import TrainModelButton from "@/components/admin/TrainModelButton";
 import { config } from "@/config";
 import { getRankingStats } from "@/lib/analytics";
 import { logError, toPublicError, ValidationError } from "@/lib/errors";
 import { getRankingEngine } from "@/lib/ranking";
 import { getBanditReport } from "@/lib/ranking/bandit";
-import { cookies } from "next/headers";
-import { VISITOR_COOKIE } from "@/components/astrologer/identity";
 import type { CandidateDebug } from "@/types/ranking";
 import { rankQuerySchema, statsQuerySchema } from "../api/_lib/schemas";
 
@@ -84,19 +83,9 @@ function Select({ name, label, value, options }: { name: string; label: string; 
 
 export default async function DashboardPage(props: PageProps<"/admin">) {
   const sp = await props.searchParams;
-  // No user id in the URL: rank as this browser's visitor, i.e. exactly what /user/astrologers shows here.
-  // An explicit empty user id (cleared field) stays anonymous.
-  const rawVisitor = (await cookies()).get(VISITOR_COOKIE)?.value;
-  const visitor = (() => {
-    try {
-      return rawVisitor ? decodeURIComponent(rawVisitor) : undefined;
-    } catch {
-      return undefined; // malformed cookie: anonymous
-    }
-  })();
+  // Single-admin page: the ranking list is the global order, never personalized to a user id.
   const q = {
     window: first(sp.window),
-    userId: sp.userId === undefined ? blank(visitor) : blank(first(sp.userId)?.trim()),
     languages: blank(first(sp.language)),
     category: blank(first(sp.category)),
     specialization: blank(first(sp.specialization)),
@@ -121,18 +110,14 @@ export default async function DashboardPage(props: PageProps<"/admin">) {
     <main className="mx-auto flex w-full max-w-[1400px] flex-col gap-6 px-4 py-8">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-semibold text-zinc-900">Ranking dashboard</h1>
+          <div className="flex flex-wrap items-center gap-3">
+            <h1 className="text-2xl font-semibold text-zinc-900">Ranking dashboard</h1>
+            <TrainModelButton />
+          </div>
           <p className="text-sm text-zinc-500">Simulate a request and inspect every score, booster and penalty behind the order.</p>
-          <p className="text-xs text-zinc-400">
-            {q.userId ? `Ranking as ${q.userId}${q.userId === visitor ? " — this browser's /user/astrologers visitor (same order)" : ""}` : "Ranking as an anonymous visitor"}
-          </p>
         </div>
 
         <form className="flex flex-wrap items-end gap-2 text-sm">
-          <label className="flex flex-col gap-1">
-            <span className="text-xs text-zinc-500">User id</span>
-            <input name="userId" defaultValue={q.userId ?? ""} placeholder="anonymous" className="w-36 rounded border border-zinc-300 px-2 py-1" />
-          </label>
           <Select name="language" label="Language" value={q.languages} options={config.catalog.languages} />
           <Select name="category" label="Category" value={q.category} options={config.catalog.categories} />
           <Select name="specialization" label="Specialization" value={q.specialization} options={config.catalog.specializations} />

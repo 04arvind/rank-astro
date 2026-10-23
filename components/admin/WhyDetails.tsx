@@ -46,16 +46,24 @@ const notesFor = (c: CandidateDebug, stages: string[]) => (c.adjustmentsNotes ??
 
 function Params({ rows }: { rows: [string, string | number | null | undefined][] }) {
   return (
-    <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 font-mono">
-      {rows
-        .filter(([, v]) => v !== undefined)
-        .map(([k, v]) => (
-          <Fragment key={k}>
-            <dt className="font-sans text-zinc-500">{k}</dt>
-            <dd className="text-zinc-800">{v === null ? "—" : typeof v === "number" ? +v.toFixed(4) : v}</dd>
-          </Fragment>
-        ))}
-    </dl>
+    <table className="w-full text-left">
+      <thead className="text-zinc-500">
+        <tr>
+          <th className="py-1">Parameter</th>
+          <th className="py-1">Value</th>
+        </tr>
+      </thead>
+      <tbody className="font-mono">
+        {rows
+          .filter(([, v]) => v !== undefined)
+          .map(([k, v]) => (
+            <tr key={k} className="border-t border-zinc-200 align-top">
+              <td className="py-1 pr-3 font-sans text-zinc-500">{k}</td>
+              <td className="py-1 text-zinc-800">{v === null ? "—" : typeof v === "number" ? +v.toFixed(4) : v}</td>
+            </tr>
+          ))}
+      </tbody>
+    </table>
   );
 }
 
@@ -106,11 +114,39 @@ function Body({ c, layers }: { c: CandidateDebug; layers?: LayerMeta[] }) {
   const diversity = b.scores.find((s) => s.name === "diversityScore");
   const t = c.thompson;
   return (
-      <div className="mt-2 space-y-3 rounded-lg bg-zinc-50 p-3">
+      <div className="mt-2 space-y-3 rounded-lg bg-zinc-50 p-3 [&_table]:border-collapse [&_table]:bg-white [&_td]:border [&_td]:border-zinc-300 [&_td]:px-2 [&_th]:border [&_th]:border-zinc-300 [&_th]:bg-zinc-100 [&_th]:px-2">
         {c.layers && (
-          <p className="font-mono text-zinc-600">
-            {LAYER_ORDER.map((k, i) => `L${i + 1} ${k === "eligibility" ? (c.layers?.[k] ? "✓" : "—") : c.layers?.[k] ? `#${c.layers[k]!.rank}` : "—"}`).join("  →  ")}
-          </p>
+          <table className="w-full text-left">
+            <thead className="text-zinc-500">
+              <tr>
+                <th className="py-1">Layer</th>
+                <th className="py-1">Status</th>
+                <th className="py-1 text-right">Position</th>
+                <th className="py-1 text-right">Score</th>
+                <th className="py-1 text-right">Move</th>
+              </tr>
+            </thead>
+            <tbody className="font-mono">
+              {LAYER_ORDER.map((k, i) => {
+                const pos = c.layers?.[k];
+                const prev = i > 1 ? c.layers?.[LAYER_ORDER[i - 1]] : undefined;
+                const moved = pos && prev ? prev.rank - pos.rank : 0;
+                return (
+                  <tr key={k} className="border-t border-zinc-200 align-top">
+                    <td className="py-1 font-sans">
+                      L{i + 1} — {LAYER_TITLE[k]}
+                    </td>
+                    <td className="py-1 font-sans text-zinc-600">{layer(k)?.status ?? "—"}</td>
+                    <td className="py-1 text-right">{k === "eligibility" ? (pos ? "✓" : "—") : pos ? `#${pos.rank}` : "—"}</td>
+                    <td className="py-1 text-right">{pos && pos.score !== null && k !== "eligibility" ? f3(pos.score) : "—"}</td>
+                    <td className={`py-1 text-right ${moved > 0 ? "text-green-700" : moved < 0 ? "text-red-500" : "text-zinc-400"}`}>
+                      {moved > 0 ? `▲${moved}` : moved < 0 ? `▼${-moved}` : "—"}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         )}
 
         <LayerSection c={c} k="eligibility" layer={layer("eligibility")}>
@@ -145,34 +181,43 @@ function Body({ c, layers }: { c: CandidateDebug; layers?: LayerMeta[] }) {
           {f2(b.signals.quotaUrgencyScore)} · #{c.scoreRank} by score alone{c.isExploration ? " · exploration slot" : ""}
         </p>
 
-        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          {[...b.scores]
-            .sort((x, y) => y.contribution - x.contribution)
-            .map((s) => (
-              <div key={s.name} className="rounded border border-zinc-200 bg-white p-2">
-                <div className="mb-1 flex justify-between font-medium">
-                  <span>{s.name}</span>
-                  <span className="font-mono">
-                    {f3(s.value)} × {s.weight} = {f3(s.contribution)}
-                  </span>
-                </div>
-                {s.missing && <p className="text-zinc-400">No data — neutral value used</p>}
-                <ul className="space-y-0.5">
+        <table className="w-full text-left">
+          <thead className="text-zinc-500">
+            <tr>
+              <th className="py-1">Score / component</th>
+              <th className="py-1 text-right">Value</th>
+              <th className="py-1 text-right">Weight</th>
+              <th className="py-1 text-right">Contribution</th>
+              <th className="py-1">Reason</th>
+            </tr>
+          </thead>
+          <tbody className="font-mono">
+            {[...b.scores]
+              .sort((x, y) => y.contribution - x.contribution)
+              .map((s) => (
+                <Fragment key={s.name}>
+                  <tr className="border-t border-zinc-300 align-top font-medium">
+                    <td className="py-1 font-sans">{s.name}</td>
+                    <td className="py-1 text-right">{f3(s.value)}</td>
+                    <td className="py-1 text-right">{s.weight}</td>
+                    <td className="py-1 text-right">{f3(s.contribution)}</td>
+                    <td className="py-1 font-sans font-normal text-zinc-400">{s.missing ? "No data — neutral value used" : ""}</td>
+                  </tr>
                   {s.components.map((cp) => (
-                    <li key={cp.name} className={`flex justify-between gap-2 ${cp.value === null ? "text-zinc-400" : ""}`}>
-                      <span className="truncate" title={cp.reason}>
-                        {cp.name}
-                        {cp.audience === "user" && cp.reason ? <span className="text-zinc-500"> · {cp.reason}</span> : null}
-                      </span>
-                      <span className="shrink-0 font-mono">
-                        {cp.value === null ? "n/a" : f2(cp.value)} <span className="text-zinc-400">w{cp.weight}</span>
-                      </span>
-                    </li>
+                    <tr key={`${s.name}-${cp.name}`} className={`border-t border-zinc-100 align-top ${cp.value === null ? "text-zinc-400" : ""}`}>
+                      <td className="py-0.5 font-sans">
+                        <span className="pl-3">{cp.name}</span>
+                      </td>
+                      <td className="py-0.5 text-right">{cp.value === null ? "n/a" : f2(cp.value)}</td>
+                      <td className="py-0.5 text-right text-zinc-400">w{cp.weight}</td>
+                      <td className="py-0.5 text-right" />
+                      <td className="py-0.5 font-sans text-zinc-500">{cp.reason ?? ""}</td>
+                    </tr>
                   ))}
-                </ul>
-              </div>
-            ))}
-        </div>
+                </Fragment>
+              ))}
+          </tbody>
+        </table>
 
         <table className="w-full text-left">
           <thead className="text-zinc-500">

@@ -48,3 +48,6 @@ next-env.d.ts
 
 # First-Out round-robin cursor (runtime state)
 /data/state/
+
+# uv virtual environment for the ML training scripts
+/scripts/ml/.venv/

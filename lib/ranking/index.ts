@@ -149,7 +149,8 @@ export function createRankingEngine(scorer: Scorer = createWeightedScorer(), opt
 
     async debug(req) {
       const { astrologerIds, ...ctx } = req;
-      const run = await stableRun(ctx, astrologerIds);
+      // Same viewer rule as rank(): no activity yet → the global run, so debug shows what that viewer was served.
+      const run = await stableRun((await hasActivity(ctx.user ?? {})) ? ctx : { ...ctx, user: {} }, astrologerIds);
       const layers = layerPositions(run.pipeline);
       const ranked: CandidateDebug[] = run.ranked.map((c) => ({
         astrologerId: c.astrologer.id,

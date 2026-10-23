@@ -96,7 +96,7 @@ export default async function HomePage() {
 
   return (
     <div className={`${display.variable} flex-1 bg-cream-50 text-espresso-900`}>
-      <Hero experts={h.verifiedAstrologers} fromPerMinute={h.fromPerMinute} onlineNow={h.onlineNow} />
+      <Hero />
 
       {/* Trust capsule, overlapping the hero's fade. */}
       <section aria-label="At a glance" className="relative z-10 mx-auto -mt-16 max-w-5xl px-5">

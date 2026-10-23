@@ -77,7 +77,23 @@ export interface AppErrorOptions {
   cause?: unknown;
 }
 
+/*
+ * Marks AppErrors across copies of this module. Next.js bundles
+ * instrumentation.ts (which installs the DB stores, db/) separately from
+ * the routes, so a store can throw an AppError from another copy of this
+ * file, and a plain `instanceof` would turn it into a 500. Symbol.for is
+ * shared by every copy.
+ */
+const APP_ERROR = Symbol.for("rank-astro.AppError");
+const isBranded = (value: unknown): value is AppError => typeof value === "object" && value !== null && APP_ERROR in value;
+const nativeInstanceOf = (cls: object, value: unknown) => Function.prototype[Symbol.hasInstance].call(cls, value);
+
 export class AppError extends Error {
+  /** `instanceof AppError` also matches AppErrors from another copy of this module. Subclasses keep plain instanceof unless they say otherwise. */
+  static [Symbol.hasInstance](value: unknown): boolean {
+    return nativeInstanceOf(this, value) || (this === AppError && isBranded(value));
+  }
+
   readonly code: ErrorCode;
   readonly status: number;
   readonly retryable: boolean;
@@ -96,6 +112,7 @@ export class AppError extends Error {
     this.publicMessage = options.publicMessage ?? spec.message;
     this.publicDetails = options.publicDetails;
     this.details = options.details;
+    Object.defineProperty(this, APP_ERROR, { value: true });
   }
 }
 
@@ -174,6 +191,11 @@ export type SlotUnavailableReason = "astrologer_busy" | "user_busy" | "outside_s
 
 /** A booking asked for a slot that can't be taken. The reason code is safe to expose. */
 export class SlotUnavailableError extends AppError {
+  /** Also matches one thrown by another copy of this module (the DB booking store), so busy-slot handling works there too. */
+  static [Symbol.hasInstance](value: unknown): boolean {
+    return nativeInstanceOf(this, value) || (this === SlotUnavailableError && isBranded(value) && value.code === "SLOT_UNAVAILABLE" && "reason" in value);
+  }
+
   readonly reason: SlotUnavailableReason;
 
   constructor(reason: SlotUnavailableReason, context: { astrologerId: string; startAt: number }, options: AppErrorOptions = {}) {

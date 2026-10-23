@@ -38,6 +38,10 @@ export interface RoundRobinState {
   nextSheet: number;
   /** Provider id → its cursor. */
   sheets: Record<string, SheetCursor>;
+  /** Provider id → weighted round-robin credit (smooth WRR; weight = its free astrologers). */
+  credits: Record<string, number>;
+  /** Astrologer id → when they were last allocated a First-Out call (longest idle goes first). */
+  lastServedAt: Record<string, number>;
   /** Total First-Out allocations made. */
   allocations: number;
   updatedAt: number;
@@ -50,7 +54,7 @@ export interface RoundRobinStateStore {
   lock(): Promise<Release>;
 }
 
-export const emptyState = (): RoundRobinState => ({ nextSheet: 0, sheets: {}, allocations: 0, updatedAt: 0 });
+export const emptyState = (): RoundRobinState => ({ nextSheet: 0, sheets: {}, credits: {}, lastServedAt: {}, allocations: 0, updatedAt: 0 });
 
 export const STATE_FILE = path.join(process.cwd(), "data", "state", "first-out-round-robin.json");
 

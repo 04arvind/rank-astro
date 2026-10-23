@@ -1,4 +1,5 @@
 import { spawn } from "node:child_process";
+import { existsSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { logError } from "@/lib/errors";
@@ -157,9 +158,19 @@ async function run(job: TrainingJob, imported: TrainingRow[]) {
   }
 }
 
+/** $PYTHON, else the uv venv in scripts/ml (where xgboost is installed), else "python". */
+function pythonExecutable(): string {
+  const fromEnv = process.env.PYTHON?.trim();
+  if (fromEnv) return fromEnv;
+  const venv = path.join(process.cwd(), "scripts", "ml", ".venv");
+  const venvPython =
+    process.platform === "win32" ? path.join(venv, "Scripts", "python.exe") : path.join(venv, "bin", "python");
+  return existsSync(venvPython) ? venvPython : "python";
+}
+
 function python(args: string[], job: TrainingJob): Promise<number | null> {
   return new Promise((resolve, reject) => {
-    const child = spawn(process.env.PYTHON?.trim() || "python", args, { cwd: process.cwd(), windowsHide: true });
+    const child = spawn(pythonExecutable(), args, { cwd: process.cwd(), windowsHide: true });
     const timer = setTimeout(() => {
       push(job, `timed out after ${TIMEOUT_MS / 60_000} minutes`);
       child.kill();

@@ -14,7 +14,7 @@
     "db:sync": "tsx scripts/db-sync.ts",
     "bandit": "tsx scripts/bandit.ts",
     "ml:export": "tsx scripts/ml-export.ts",
-    "ml:train": "python scripts/ml/train_ranker.py",
+    "ml:train": "uv run --project scripts/ml python scripts/ml/train_ranker.py",
     "test": "tsx --test \"test/bandit/*.test.ts\" \"test/pipeline/*.test.ts\""
   },
   "dependencies": {

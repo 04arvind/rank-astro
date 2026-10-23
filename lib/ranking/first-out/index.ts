@@ -6,7 +6,7 @@
  */
 
 export { allocateRoundRobin, rotationOrder, type Allocation, type TryPlace } from "./allocator";
-export { buildSheets, getFirstOutPool, type Sheet } from "./roster";
+export { buildSheets, filterByPreferences, getFirstOutPool, type FirstOutPreferences, type Sheet } from "./roster";
 export {
   FileRoundRobinStateStore,
   MongoRoundRobinStateStore,

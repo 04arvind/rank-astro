@@ -6,7 +6,7 @@ import { formatSlot, localDayStart } from "@/lib/booking/time";
 import type { DurationMinutes } from "@/lib/consultation/offers";
 import { AppError, logError, NotFoundError, SlotUnavailableError } from "@/lib/errors";
 import { fetchAvailability } from "@/lib/providers";
-import { allocateRoundRobin, getFirstOutPool } from "@/lib/ranking/first-out";
+import { allocateRoundRobin, filterByPreferences, getFirstOutPool } from "@/lib/ranking/first-out";
 import { getUserProfile } from "@/lib/user";
 import { DAY_MS, MINUTE_MS } from "@/lib/utils/time";
 import type { AstrologerProfile } from "@/types/astrologer";
@@ -373,7 +373,10 @@ async function reassign(b: Booking, now: number): Promise<AstrologerProfile | nu
   const requests = getRequestStore();
   const declined = new Set((await requests.forBooking(b.bookingId)).filter((r) => r.status === "rejected").map((r) => r.astrologerId));
   declined.add(b.astrologerId);
-  let pool = (await getFirstOutPool(b.minutes as DurationMinutes, now)).filter((a) => !declined.has(a.id));
+  // Same topic and language as the user picked (from the booking, or its first request for older bookings).
+  const first = b.preferences ? undefined : await requests.get(requestId(b.bookingId, b.astrologerId));
+  const preferences = b.preferences ?? (first ? { topic: first.topic, language: first.language } : undefined);
+  let pool = filterByPreferences(await getFirstOutPool(b.minutes as DurationMinutes, now), preferences).filter((a) => !declined.has(a.id));
   if (b.kind === "instant") {
     const live = await fetchAvailability(pool, now);
     pool = pool.filter((a) => (live.get(a.id)?.status ?? a.availability.status) === "online");

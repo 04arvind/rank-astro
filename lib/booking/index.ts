@@ -3,7 +3,7 @@ import { getAstrologerRepository } from "@/lib/astrologer";
 import { listEligibleAstrologers, type DurationMinutes } from "@/lib/consultation/offers";
 import { AppError, logError, NotFoundError, ProviderError, ProviderTimeoutError, SlotUnavailableError, toAppError } from "@/lib/errors";
 import { fetchAvailability, getProviderAdapter } from "@/lib/providers";
-import { allocateRoundRobin, getFirstOutPool } from "@/lib/ranking/first-out";
+import { allocateRoundRobin, filterByPreferences, getFirstOutPool } from "@/lib/ranking/first-out";
 import { DAY_MS, MINUTE_MS } from "@/lib/utils/time";
 import type { AstrologerProfile } from "@/types/astrologer";
 import type {
@@ -58,8 +58,11 @@ async function astrologerOrThrow(astrologerId: string): Promise<AstrologerProfil
 
 const targetKey = (t: BookingTarget) => ("astrologerId" in t ? t.astrologerId : `pool:${t.minutes}`);
 
-async function candidatesFor(target: BookingTarget, now: number): Promise<AstrologerProfile[]> {
-  return "astrologerId" in target ? [await astrologerOrThrow(target.astrologerId)] : getFirstOutPool(target.minutes, now);
+/** A chosen astrologer, or the First-Out pool narrowed to the user's topic and language (before the rotation runs). */
+async function candidatesFor(target: BookingTarget, now: number, preferences?: Booking["preferences"]): Promise<AstrologerProfile[]> {
+  return "astrologerId" in target
+    ? [await astrologerOrThrow(target.astrologerId)]
+    : filterByPreferences(await getFirstOutPool(target.minutes, now), preferences);
 }
 
 const isMissed = (b: Booking, now: number) =>
@@ -194,7 +197,7 @@ async function ensureAssigned(b: Booking, now: number): Promise<Booking> {
   if (eligible.has(b.astrologerId)) return b;
 
   const store = getBookingStore();
-  const pool = b.minutes ? await getFirstOutPool(b.minutes as DurationMinutes, now) : [];
+  const pool = b.minutes ? filterByPreferences(await getFirstOutPool(b.minutes as DurationMinutes, now), b.preferences) : [];
   for (const a of pool) {
     if (a.id === b.astrologerId) continue;
     try {
@@ -234,6 +237,8 @@ export interface CreateBookingInput {
   /** Slot start; scheduled only. */
   startAt?: number;
   target: BookingTarget;
+  /** Duration card: the topic and language picked on the form; First-Out only assigns astrologers matching them. */
+  preferences?: Booking["preferences"];
 }
 
 async function assertNoActiveBooking(userId: string, now: number): Promise<void> {
@@ -288,7 +293,7 @@ type Placer = typeof placeWithFirstFree;
 
 function draftBooking(
   a: AstrologerProfile,
-  input: { userId: string; sessionId?: string; target: BookingTarget },
+  input: { userId: string; sessionId?: string; target: BookingTarget; preferences?: Booking["preferences"] },
   when: { kind: BookingKind; startAt: number; endAt: number; durationMinutes: number; pickupBy?: number },
   now: number,
 ): Booking {
@@ -303,6 +308,7 @@ function draftBooking(
     status: "confirmed",
     createdAt: now,
     minutes: "minutes" in input.target ? input.target.minutes : undefined,
+    ...("minutes" in input.target && input.preferences ? { preferences: input.preferences } : {}),
     connectedAt: null,
     issue: null,
     ...when,
@@ -332,7 +338,7 @@ export async function createBooking(
 ): Promise<{ booking: Booking; notification: AstrologerNotification | null }> {
   const rules = config.booking;
   await assertNoActiveBooking(input.userId, now);
-  const pool = await candidatesFor(input.target, now);
+  const pool = await candidatesFor(input.target, now, input.preferences);
   // Duration cards (First-Out) rotate across the sheets; a chosen astrologer is booked directly.
   const place: Placer = "minutes" in input.target ? placeRoundRobin : placeWithFirstFree;
 
@@ -391,7 +397,7 @@ export async function rescheduleBooking(bookingId: string, userId: string, start
   // A pending talk-now call can only be cancelled: no switching modes after payment. A missed one may move to a slot.
   if (b.kind === "instant" && b.status === "confirmed") throw notChangeable(b, "instant call pending");
   const target: BookingTarget = b.minutes ? { minutes: b.minutes as DurationMinutes } : { astrologerId: b.astrologerId };
-  const pool = await candidatesFor(target, now);
+  const pool = await candidatesFor(target, now, b.preferences);
   // Keep the same astrologer when they're free then.
   const candidates = [...pool.filter((a) => a.id === b.astrologerId), ...pool.filter((a) => a.id !== b.astrologerId)];
 

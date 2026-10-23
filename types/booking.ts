@@ -35,6 +35,8 @@ export interface Booking {
   kind?: BookingKind;
   /** Consultation length the user chose (a DURATIONS value), when booked from a duration card; picks the reassignment pool. */
   minutes?: number;
+  /** Duration card only: the topic and language the user picked; every First-Out (re)assignment is limited to astrologers matching them. */
+  preferences?: { topic: string | null; language: string | null };
   /** Instant only: the astrologer must call by then. */
   pickupBy?: number;
   /** When the astrologer connected the call (reported by the provider integration). */

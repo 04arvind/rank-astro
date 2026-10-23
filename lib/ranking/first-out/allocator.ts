@@ -5,17 +5,27 @@ import { buildSheets, type Sheet } from "./roster";
 import { emptyState, getRoundRobinStateStore, type RoundRobinState, type SheetCursor } from "./state";
 
 /*
- * Strict round-robin allocation for First-Out bookings (the user picks a
- * duration, never an astrologer). Turns rotate across the sheets, and
- * within a sheet down its rows:
+ * Weighted round-robin allocation for First-Out bookings (the user picks a
+ * duration, never an astrologer), so every astrologer gets a fair share of
+ * calls whichever provider they are with:
  *
- *   user 1 → A[0], user 2 → B[0], user 3 → C[0], user 4 → A[1], …
+ *   Across sheets — smooth weighted round-robin. Each sheet's weight is how
+ *   many of its astrologers are free for this call (in the pool). Every
+ *   allocation adds each sheet's weight to its credit; the sheet with the
+ *   highest credit takes the turn and pays back the total weight. Turns are
+ *   interleaved and proportional to free astrologers: a sheet with 50 free
+ *   gets ~10× the calls of a sheet with 5, i.e. the same per astrologer.
+ *   Ties go to the sheet whose plain round-robin turn is next.
+ *
+ *   Within a sheet — longest idle first: the astrologer whose last
+ *   First-Out allocation is oldest (never allocated = first). Ties keep the
+ *   sheet's row rotation, so a fresh roster is served row by row.
  *
  * Positions index the full sheet (every astrologer in the feed), so they
  * don't shift when someone goes offline. An astrologer who can't take this
  * call (not in the pool, or the booking store says busy) is skipped for the
- * next row of the same sheet; a sheet with nobody free passes its turn to
- * the next sheet. A short sheet wraps to its first row on its own.
+ * next one in the same sheet; a sheet with nobody free passes its turn to
+ * the sheet with the next-highest credit.
  *
  * Allocations are atomic: one at a time in this process, and under the
  * state store's lock across processes, so concurrent payments can't read
@@ -67,21 +77,47 @@ async function loadState(): Promise<RoundRobinState> {
   }
 }
 
+/** Each sheet's credit after this allocation's weights are added (weight = its free astrologers), and the total weight. */
+function creditsAfterAdd(sheets: Sheet[], state: RoundRobinState, pool: ReadonlySet<string>): { credits: Record<string, number>; total: number } {
+  const credits: Record<string, number> = {};
+  let total = 0;
+  for (const sheet of sheets) {
+    const weight = sheet.astrologers.filter((a) => pool.has(a.id)).length;
+    // A sheet with nobody free keeps its credit as it was; it isn't owed turns it couldn't take.
+    credits[sheet.providerId] = (state.credits?.[sheet.providerId] ?? 0) + weight;
+    total += weight;
+  }
+  // Bound drift from roster/pool changes: no sheet is ever more than one full round ahead or behind.
+  for (const id of Object.keys(credits)) credits[id] = Math.max(-total, Math.min(total, credits[id]));
+  return { credits, total };
+}
+
 /** The order the next allocation would try `pool`'s astrologers in (no booking, no state change). */
 export function rotationOrder(sheets: Sheet[], state: RoundRobinState, pool: ReadonlySet<string>): { astrologer: AstrologerProfile; sheet: number; position: number }[] {
-  const order: { astrologer: AstrologerProfile; sheet: number; position: number }[] = [];
   const n = sheets.length;
-  for (let k = 0; k < n; k++) {
-    const s = (((state.nextSheet + k) % n) + n) % n;
+  const { credits } = creditsAfterAdd(sheets, state, pool);
+  // Highest credit first; ties by plain round-robin distance from nextSheet.
+  const turn = (s: number) => (((s - state.nextSheet) % n) + n) % n;
+  const sheetOrder = sheets
+    .map((_, s) => s)
+    .sort((x, y) => credits[sheets[y].providerId] - credits[sheets[x].providerId] || turn(x) - turn(y));
+
+  const order: { astrologer: AstrologerProfile; sheet: number; position: number }[] = [];
+  for (const s of sheetOrder) {
     const sheet = sheets[s];
     const len = sheet.astrologers.length;
     if (len === 0) continue;
     const start = startOf(sheet, state.sheets[sheet.providerId]);
+    const free: { astrologer: AstrologerProfile; sheet: number; position: number; rotation: number }[] = [];
     for (let j = 0; j < len; j++) {
       const position = (start + j) % len;
       const astrologer = sheet.astrologers[position];
-      if (pool.has(astrologer.id)) order.push({ astrologer, sheet: s, position });
+      if (pool.has(astrologer.id)) free.push({ astrologer, sheet: s, position, rotation: j });
     }
+    // Longest idle first (never allocated = 0); ties keep the row rotation.
+    const servedAt = (a: AstrologerProfile) => state.lastServedAt?.[a.id] ?? 0;
+    free.sort((x, y) => servedAt(x.astrologer) - servedAt(y.astrologer) || x.rotation - y.rotation);
+    for (const { astrologer, position } of free) order.push({ astrologer, sheet: s, position });
   }
   return order;
 }
@@ -106,15 +142,24 @@ export function allocateRoundRobin<T>(pool: readonly AstrologerProfile[], tryPla
 
 async function allocateLocked<T>(sheets: Sheet[], pool: readonly AstrologerProfile[], tryPlace: TryPlace<T>, now: number): Promise<Allocation<T> | null> {
   const state = await loadState();
+  const free = new Set(pool.map((a) => a.id));
 
-  for (const { astrologer, sheet, position } of rotationOrder(sheets, state, new Set(pool.map((a) => a.id)))) {
+  for (const { astrologer, sheet, position } of rotationOrder(sheets, state, free)) {
     const result = await tryPlace(astrologer);
     if (result === null) continue;
 
     const { providerId, astrologers } = sheets[sheet];
+    const { credits, total } = creditsAfterAdd(sheets, state, free);
+    credits[providerId] -= total; // the sheet that took the turn pays back the round's total weight
+    // Keep idle times only for astrologers still on a sheet, so the state doesn't grow with roster churn.
+    const onRoster = new Set(sheets.flatMap((s) => s.astrologers.map((a) => a.id)));
+    const lastServedAt = Object.fromEntries(Object.entries(state.lastServedAt ?? {}).filter(([id]) => onRoster.has(id)));
+    lastServedAt[astrologer.id] = now;
     const next: RoundRobinState = {
       nextSheet: (sheet + 1) % sheets.length,
       sheets: { ...state.sheets, [providerId]: { next: (position + 1) % astrologers.length, lastAstrologerId: astrologer.id } },
+      credits,
+      lastServedAt,
       allocations: state.allocations + 1,
       updatedAt: now,
     };

@@ -49,8 +49,10 @@ async function place(input: PlaceRequestInput, now: number): Promise<PlacedReque
   }
 
   const { details, requestKey, payment, ...create } = input;
-  const { booking, notification } = await createBooking(create, now);
   const source = "minutes" in create.target ? "first_out" : "user_choice";
+  // First-Out assigns only astrologers matching the topic and language picked on the form.
+  const preferences = source === "first_out" ? { topic: details.topic, language: details.language } : undefined;
+  const { booking, notification } = await createBooking({ ...create, preferences }, now);
   const paid = payment ? { paymentId: payment.paymentId, amount: payment.amount, status: "paid" as const } : undefined;
   try {
     await getRequestStore().put({ ...requestFor(booking, details, { source, requestKey, now }), ...(paid ? { payment: paid } : {}) });

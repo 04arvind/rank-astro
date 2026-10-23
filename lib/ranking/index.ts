@@ -1,5 +1,7 @@
 import { config } from "@/config";
+import { getAnalyticsStore } from "@/lib/analytics";
 import { toPublicAstrologer } from "@/lib/astrologer";
+import { getExplicitPreferences, getFavorites, getUserProfile } from "@/lib/user";
 import type {
   CandidateDebug,
   EngineInfo,
@@ -65,6 +67,31 @@ export function resetRankingRuns(): void {
   g.__rankingRuns?.clear();
 }
 
+/**
+ * Whether the visitor has done anything beyond viewing lists: a click, call or
+ * rating (by user or session), or a saved profile, preferences or favourite.
+ * Impressions alone do not count, so a first visit stays on the global order.
+ */
+async function hasActivity({ userId, sessionId }: RankingContext["user"]): Promise<boolean> {
+  if (!userId && !sessionId) return false;
+  const store = getAnalyticsStore();
+  const range = { from: 0, to: Date.now() };
+  const viewers: { userId?: string; sessionId?: string }[] = [];
+  if (userId) viewers.push({ userId });
+  if (sessionId) viewers.push({ sessionId });
+  const checks: Promise<boolean>[] = viewers.flatMap((viewer) =>
+    (["click", "call", "rating"] as const).map((type) => store.query({ type, range, ...viewer }).then((e) => e.length > 0)),
+  );
+  if (userId) {
+    checks.push(
+      getUserProfile(userId).then(Boolean),
+      getExplicitPreferences(userId).then(Boolean),
+      getFavorites(userId).then((f) => f.length > 0),
+    );
+  }
+  return (await Promise.all(checks)).some(Boolean);
+}
+
 /** Builds an engine around any Scorer — the weighted-score model by default. */
 export function createRankingEngine(scorer: Scorer = createWeightedScorer(), options: Omit<RunOptions, "scorer"> = {}): RankingEngine {
   const engine: EngineInfo = { name: scorer.name, version: config.ranking.engine.version };
@@ -100,7 +127,8 @@ export function createRankingEngine(scorer: Scorer = createWeightedScorer(), opt
 
   return {
     async rank(ctx) {
-      const run = await stableRun(ctx);
+      // No activity yet: serve the same global run as the admin ranking list (no viewer id).
+      const run = await stableRun((await hasActivity(ctx.user)) ? ctx : { ...ctx, user: {} });
       const { offset, limit } = ctx.pagination;
       const page = run.ranked.slice(offset, offset + limit);
       return {

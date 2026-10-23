@@ -110,7 +110,7 @@ type Errors = Partial<Record<"name" | "mobile" | "city" | "subject", string>>;
 const PLACE = /^\p{L}[\p{L} .'-]*$/u;
 
 /** 10-digit Indian mobile, accepting a +91 / 0 prefix and spaces or dashes. */
-function normalizeMobile(raw: string): string | null {
+export function normalizeMobile(raw: string): string | null {
   let d = raw.replace(/\D/g, "");
   if (d.length === 12 && d.startsWith("91")) d = d.slice(2);
   else if (d.length === 11 && d.startsWith("0")) d = d.slice(1);
@@ -159,7 +159,7 @@ interface PillFieldProps {
 }
 
 /** Pill-shaped input with a small planet on the left. */
-function PillField({ id, label, glyph, value, error, onChange, inputProps }: PillFieldProps) {
+export function PillField({ id, label, glyph, value, error, onChange, inputProps }: PillFieldProps) {
   return (
     <div>
       <label htmlFor={id} className="mb-1.5 block pl-5 text-[11px] font-medium uppercase tracking-[0.18em] text-celestial-800/60">

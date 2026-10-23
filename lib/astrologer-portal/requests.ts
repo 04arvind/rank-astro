@@ -21,7 +21,8 @@ export type RequestStatus = "pending" | "accepted" | "rejected";
 export type RequestSource = "first_out" | "user_choice";
 
 export interface RequestDetails {
-  customer: { name: string; mobile: string; city: string } | null;
+  /** name and city are null when the user gave only a mobile (astrologer-card booking). */
+  customer: { name: string | null; mobile: string; city: string | null } | null;
   /** Topic / subject the user picked, as shown to them. */
   topic: string | null;
   language: string | null;

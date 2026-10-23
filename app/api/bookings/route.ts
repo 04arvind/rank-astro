@@ -38,7 +38,7 @@ import { parseJsonBody, parseQuery } from "../_lib/validation";
 const id = z.string().trim().min(1).max(128);
 const time = z.number().int().nonnegative();
 const text = (max: number) => z.string().trim().min(1).max(max);
-// The contact fields come together (duration-card form) or not at all (astrologer card).
+// The contact fields come together (duration-card form), as a mobile alone (astrologer card), or not at all.
 const detailsSchema = z
   .object({
     name: text(60).optional(),
@@ -47,8 +47,8 @@ const detailsSchema = z
     topic: text(60).optional(),
     language: text(40).optional(),
   })
-  .refine((d) => [d.name, d.mobile, d.city].every((v) => v === undefined) || [d.name, d.mobile, d.city].every((v) => v !== undefined), {
-    message: "name, mobile and city go together",
+  .refine((d) => (d.name === undefined) === (d.city === undefined) && (d.name === undefined || d.mobile !== undefined), {
+    message: "name, mobile and city go together (or mobile alone)",
   });
 
 const minutes = z
@@ -99,7 +99,7 @@ export const POST = handle(async (req: NextRequest, { requestId }) => {
     mode: body.mode,
     startAt: body.slotTime,
     details: {
-      customer: d?.name && d.mobile && d.city ? { name: d.name, mobile: d.mobile, city: d.city } : null,
+      customer: d?.mobile ? { name: d.name ?? null, mobile: d.mobile, city: d.city ?? null } : null,
       topic: d?.topic ?? null,
       language: d?.language ?? null,
     },

@@ -10,9 +10,7 @@ import { Avatar, Chip, Empty, inr, KindBadge, Panel, StatCard, StatusBadge, time
 
 /* The astrologer dashboard's sections, one per tab. */
 
-/** "+91 98765 43210" */
-const formatMobile = (m: string) => (/^\d{10}$/.test(m) ? `+91 ${m.slice(0, 5)} ${m.slice(5)}` : m);
-
+/** The user's mobile is never shown: calls go through the platform's Call now. */
 function UserCell({ c }: { c: Consultation }) {
   return (
     <div className="flex min-w-0 items-center gap-2.5">
@@ -21,13 +19,7 @@ function UserCell({ c }: { c: Consultation }) {
       </span>
       <div className="min-w-0">
         <p className="truncate font-medium text-celestial-900">{userLabel(c.user)}</p>
-        {c.user.mobile && (
-          <a href={`tel:+91${c.user.mobile}`} className="block whitespace-nowrap text-xs font-medium text-celestial-600 hover:underline">
-            <span aria-hidden="true">☏ </span>
-            {formatMobile(c.user.mobile)}
-          </a>
-        )}
-        <p className="truncate text-xs text-celestial-800/50">{c.user.city ?? (c.user.mobile ? null : `ID ${c.user.id.slice(0, 14)}`)}</p>
+        <p className="truncate text-xs text-celestial-800/50">{c.user.city ?? `ID ${c.user.id.slice(0, 14)}`}</p>
       </div>
     </div>
   );

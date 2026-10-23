@@ -1,6 +1,7 @@
 import { config } from "@/config";
 import { getAstrologerRepository } from "@/lib/astrologer";
-import { getBookingStore, getNotificationStore, markConnected } from "@/lib/booking";
+import { recordCall } from "@/lib/analytics";
+import { getBookingStore, getNotificationStore } from "@/lib/booking";
 import { formatSlot, localDayStart } from "@/lib/booking/time";
 import type { DurationMinutes } from "@/lib/consultation/offers";
 import { AppError, logError, NotFoundError, SlotUnavailableError } from "@/lib/errors";
@@ -19,8 +20,8 @@ import type { CalendarEvent, Consultation, ConsultationStatus, EarningsSummary, 
  * The astrologer portal: an astrologer's own view of their consultations,
  * plus what they manage themselves — availability, accepting or rejecting
  * requests, notification read state. Requests (./requests) carry the
- * user's details and the astrologer's decision; "call now" uses the
- * booking module's existing markConnected, and a rejected First-Out
+ * user's details and the astrologer's decision; "call now" simulates a
+ * completed call through the platform, and a rejected First-Out
  * booking moves on through the First-Out rotation.
  */
 
@@ -29,8 +30,6 @@ export * from "./requests";
 export { getPortalStore, setPortalStore, defaultSettings } from "./store";
 
 const FOREVER = Number.MAX_SAFE_INTEGER;
-/** A scheduled call may be started this early. */
-const CALL_EARLY_MS = 10 * MINUTE_MS;
 /** A booking created this soon after another of the user's was cancelled is the same booking rescheduled. */
 const RESCHEDULE_GAP_MS = 10_000;
 
@@ -93,7 +92,7 @@ function toConsultation(b: Booking, r: ConsultationRequest | undefined, a: Astro
   const callable =
     kind === "instant"
       ? status === "pending" || status === "confirmed"
-      : (status === "confirmed" || status === "due") && now >= b.startAt - CALL_EARLY_MS && now < b.endAt;
+      : (status === "pending" || status === "confirmed" || status === "due") && now < b.endAt;
   return {
     bookingId: b.bookingId,
     kind,
@@ -457,10 +456,35 @@ export async function rejectRequest(astrologerId: string, bookingId: string, now
   return { reassigned: false };
 }
 
-/** The astrologer starts the call (accepting it if still pending): recorded as connected, as the provider integration would. */
+/**
+ * The astrologer starts the call (accepting it if still pending). Until a
+ * telephony bridge is wired in, the call is simulated as redirected through
+ * the platform (the user's number is never shown) and completed at once:
+ * the booking becomes the call window that just ended and a completed call
+ * is recorded, so analytics and the bandit count it like a real one.
+ */
 export async function callNow(astrologerId: string, bookingId: string, now = Date.now()): Promise<void> {
   const c = await ownConsultation(astrologerId, bookingId, now);
   if (!c.canCall) throw notChangeable(bookingId, `can't be called now (${c.status})`);
-  if (c.status === "pending") await decide(astrologerId, await ownBooking(astrologerId, bookingId), "accepted", now);
-  await markConnected(bookingId, now);
+  const b = await ownBooking(astrologerId, bookingId);
+  if (c.status === "pending") await decide(astrologerId, b, "accepted", now);
+
+  const startedAt = now - b.durationMinutes * MINUTE_MS;
+  const done = await getBookingStore().update(bookingId, { status: "confirmed", astrologerId }, { connectedAt: startedAt, startAt: startedAt, endAt: now });
+  if (!done) throw notChangeable(bookingId, "changed meanwhile");
+  try {
+    await recordCall({
+      callId: bookingId,
+      userId: b.userId,
+      sessionId: b.sessionId,
+      astrologerId,
+      providerId: b.providerId,
+      status: "completed",
+      startedAt,
+      endedAt: now,
+      pricePerMinute: b.pricePerMinute,
+    });
+  } catch (err) {
+    logError(err, { scope: "astrologer-portal", operation: "recordCall", bookingId });
+  }
 }

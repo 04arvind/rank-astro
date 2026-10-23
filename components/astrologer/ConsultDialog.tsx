@@ -5,6 +5,7 @@ import { display } from "@/app/_components/fonts";
 import { api, OrbitSteps, rupees, ScheduleStep, SectionTitle, useModal, useSlotCalendar, VS, ZodiacWheel } from "@/components/booking/celestial";
 import { formatSlot } from "@/lib/booking/time";
 import type { Astrologer } from "@/types/astrologer";
+import { normalizeMobile, PillField } from "@/components/user/BookingDialog";
 import { identity } from "./identity";
 
 /*
@@ -58,6 +59,8 @@ export default function ConsultDialog({ astrologer: a, context, onClose, onPay }
   const [step, setStep] = useState<Step>("choose");
   const [pay, setPay] = useState<PayState>({ name: "idle" });
   const [error, setError] = useState<string | null>(null);
+  const [mobile, setMobile] = useState("");
+  const [mobileError, setMobileError] = useState<string | undefined>();
 
   const panelRef = useRef<HTMLDivElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
@@ -111,6 +114,10 @@ export default function ConsultDialog({ astrologer: a, context, onClose, onPay }
       void cal.reload();
       return setError("That time has just passed. Please pick another slot.");
     }
+    const userMobile = normalizeMobile(mobile);
+    if (!userMobile) {
+      return setMobileError(mobile.trim() ? "Enter a valid 10-digit mobile number." : "Please enter your mobile number.");
+    }
 
     setError(null);
     setPay({ name: "paying", stage: "booking" });
@@ -121,7 +128,7 @@ export default function ConsultDialog({ astrologer: a, context, onClose, onPay }
         method: "POST",
         headers: { "content-type": "application/json" },
         // One key per Pay attempt: a repeated or retried request returns the same booking.
-        body: JSON.stringify({ astrologerId: a.id, userId, sessionId, startAt: slot, requestKey: crypto.randomUUID(), details: context }),
+        body: JSON.stringify({ astrologerId: a.id, userId, sessionId, startAt: slot, requestKey: crypto.randomUUID(), details: { ...context, mobile: userMobile } }),
       });
       order = {
         bookingId: b.bookingId,
@@ -277,6 +284,20 @@ export default function ConsultDialog({ astrologer: a, context, onClose, onPay }
                   <Row label="Rate" value={perMin(a.pricePerMinute)} />
                   <Row label="Fee" value={fee !== null && minutes !== null ? `${perMin(a.pricePerMinute)} × ${minutes} min` : "—"} />
                 </dl>
+                <div className="relative mt-5">
+                  <PillField
+                    id={`${uid}-mobile`}
+                    label="Enter mobile number"
+                    glyph="☏"
+                    value={mobile}
+                    error={mobileError}
+                    onChange={(v) => {
+                      setMobile(v.replace(/[^\d+\s-]/g, ""));
+                      setMobileError(undefined);
+                    }}
+                    inputProps={{ type: "tel", inputMode: "tel", autoComplete: "tel", placeholder: "98765 43210", maxLength: 16, disabled: busy }}
+                  />
+                </div>
                 <div className="relative mt-6 flex items-end justify-between gap-4 border-t border-dashed border-lavender-200 pt-5">
                   <div>
                     <p className="text-[11px] uppercase tracking-[0.18em] text-celestial-800/50">Amount payable</p>

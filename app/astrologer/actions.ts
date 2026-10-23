@@ -88,7 +88,7 @@ export async function callNowAction(_: ActionResult, formData: FormData): Promis
   if (!id.success) return fail("Unknown booking.");
   return asAstrologer(async (me) => {
     await callNow(me, id.data);
-    return "Call connected.";
+    return "Call redirected through the platform and completed.";
   });
 }
 

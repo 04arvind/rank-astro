@@ -39,7 +39,7 @@ export interface BookingExpectation {
 }
 
 export type BookingPatch = Partial<
-  Pick<Booking, "status" | "astrologerId" | "providerId" | "pricePerMinute" | "connectedAt" | "cancelledAt" | "issue">
+  Pick<Booking, "status" | "astrologerId" | "providerId" | "pricePerMinute" | "connectedAt" | "cancelledAt" | "issue" | "startAt" | "endAt">
 >;
 
 /** Whether applying `patch` to `b` needs the double-booking check. */
